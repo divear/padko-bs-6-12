@@ -1,5 +1,7 @@
 from datetime import datetime
 
+
+
 class Test:
     def __init__(self):
         self.vse = "Všobecné znalosti"
@@ -17,9 +19,9 @@ class Test:
     def typ_testu(self):
         moznost = input("Ktery typ testu chcete (T: Test P: Přijímačky)? ").upper()
         if moznost == "T":
-            print("test")
+            print("Z A Č Á T E K  T E S T U“")
         elif moznost == "P":
-            print("prijimacky")
+            print("Z A Č Á T E K  P Ř I J Í M A Č E K")
         # tady jeste chce "vstup pro zvolenou možnost výběru"
     def zapis(self):
         self.jmeno = input("Vase jmeno a prijimeni: ")
@@ -41,6 +43,26 @@ class Test:
             odpoved = input(f"\n{e} ")
             self.kontrola(odpoved, i)
         print(self.pointy)
+    def hodnoceni(self, znamka):
+        match body:
+                case 5:
+                    return "Známka: 1"
+                case 4:
+                    return "Známka: 2"
+                case 3:
+                    return "Známka: 3"
+                case 2 | 1:
+                    return "Známka: 4"
+                case 0:
+                    return "Známka: 5"
+                case _:
+                    return "Neplatný počet bodů"
+    def __del__:
+        print("HODNOCENÍ BYLO ULOŽENO")
+
+class Prijimacky(Test):
+    def __init__(self):
+        super().__init__(self)
 
 
 
@@ -54,4 +76,4 @@ d.otazky()
 # f) idk co really chce
 # g) hodnoceni
 # h) destruktor
-# cela dvojka a trojka xd
+# cela dvojka a trojka xd, gl ja jdu spinkat je 00:39
